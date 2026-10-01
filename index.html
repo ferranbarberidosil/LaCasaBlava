@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Casa Blava | Roba per a tota la família a Olot</title>
+  <meta name="description" content="La Casa Blava, botiga de roba per a tota la família a Olot. Horari, telèfon i adreça: C/ Sant Pere Màrtir, 7.">
+
+  <!-- Tipografies gratuïtes de Google Fonts (si no carreguen, s'usen les del sistema) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== COLORS: blau de "la casa blava" i un groc sol per a les ofertes ===== */
+    :root {
+      --blau: #1D4E89;
+      --blau-fosc: #10294A;
+      --cel: #E8F0FA;
+      --fons: #F7F9FC;
+      --blanc: #FFFFFF;
+      --text: #1B2430;
+      --text-suau: #4A5668;
+      --verd: #1F7A4D;
+      --vermell: #B3402F;
+      --vora: #D3DDEB;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background-color: #FFFFFF;
+      color: var(--text);
+      font-family: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+    }
+    /* Fons: línies corbes fines, molt suaus, que queden fixes darrere del contingut */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 900' preserveAspectRatio='xMidYMid slice' fill='none' stroke='%23D3E2F5' stroke-width='1.4' stroke-linecap='round'%3E%3Cpath d='M-100 120 C300 -60 600 380 1000 180 S1400 120 1600 260'/%3E%3Cpath d='M-100 138 C300 -42 606 395 1006 195 S1400 136 1600 276'/%3E%3Cpath d='M-100 156 C300 -24 612 411 1012 209 S1400 152 1600 293'/%3E%3Cpath d='M-100 175 C300 -5 618 426 1018 224 S1400 168 1600 309'/%3E%3Cpath d='M-100 193 C300 13 624 441 1024 239 S1400 184 1600 326'/%3E%3Cpath d='M-100 211 C300 31 629 456 1029 254 S1400 199 1600 342'/%3E%3Cpath d='M-100 229 C300 49 635 472 1035 268 S1400 215 1600 359'/%3E%3Cpath d='M-100 248 C300 68 641 487 1041 283 S1400 231 1600 375'/%3E%3Cpath d='M-100 266 C300 86 647 502 1047 298 S1400 247 1600 392'/%3E%3Cpath d='M-100 284 C300 104 653 518 1053 312 S1400 263 1600 408'/%3E%3Cpath d='M-100 302 C300 122 659 533 1059 327 S1400 279 1600 425'/%3E%3Cpath d='M-100 321 C300 141 665 548 1065 342 S1400 295 1600 441'/%3E%3Cpath d='M-100 339 C300 159 671 564 1071 356 S1400 311 1600 458'/%3E%3Cpath d='M-100 357 C300 177 676 579 1076 371 S1400 326 1600 474'/%3E%3Cpath d='M-100 375 C300 195 682 594 1082 386 S1400 342 1600 491'/%3E%3Cpath d='M-100 394 C300 214 688 609 1088 401 S1400 358 1600 507'/%3E%3Cpath d='M-100 412 C300 232 694 625 1094 415 S1400 374 1600 524'/%3E%3Cpath d='M-100 430 C300 250 700 640 1100 430 S1400 390 1600 540'/%3E%3Cpath d='M-100 640 C300 520 620 880 1020 720 S1400 650 1600 780'/%3E%3Cpath d='M-100 655 C300 535 625 891 1025 731 S1400 662 1600 791'/%3E%3Cpath d='M-100 669 C300 549 631 901 1031 743 S1400 674 1600 803'/%3E%3Cpath d='M-100 684 C300 564 636 912 1036 754 S1400 686 1600 814'/%3E%3Cpath d='M-100 699 C300 579 641 923 1041 765 S1400 698 1600 825'/%3E%3Cpath d='M-100 713 C300 593 647 933 1047 777 S1400 710 1600 837'/%3E%3Cpath d='M-100 728 C300 608 652 944 1052 788 S1400 722 1600 848'/%3E%3Cpath d='M-100 743 C300 623 657 955 1057 799 S1400 734 1600 859'/%3E%3Cpath d='M-100 757 C300 637 663 965 1063 811 S1400 746 1600 871'/%3E%3Cpath d='M-100 772 C300 652 668 976 1068 822 S1400 758 1600 882'/%3E%3Cpath d='M-100 787 C300 667 673 987 1073 833 S1400 770 1600 893'/%3E%3Cpath d='M-100 801 C300 681 679 997 1079 845 S1400 782 1600 905'/%3E%3Cpath d='M-100 816 C300 696 684 1008 1084 856 S1400 794 1600 916'/%3E%3Cpath d='M-100 831 C300 711 689 1019 1089 867 S1400 806 1600 927'/%3E%3Cpath d='M-100 845 C300 725 695 1029 1095 879 S1400 818 1600 939'/%3E%3Cpath d='M-100 860 C300 740 700 1040 1100 890 S1400 830 1600 950'/%3E%3C/svg%3E") center / cover no-repeat;
+      pointer-events: none;
+    }
+    h1, h2, h3 {
+      font-family: "Lora", Georgia, "Times New Roman", serif;
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 0;
+      color: var(--blau-fosc);
+    }
+    a { color: var(--blau); text-underline-offset: 3px; }
+    a:hover { color: var(--blau-fosc); }
+    :focus-visible { outline: 3px solid var(--blau); outline-offset: 3px; border-radius: 4px; }
+
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ===== CAPÇALERA ===== */
+    header.top { background: var(--blanc); border-bottom: 1px solid var(--vora); }
+    header.top .wrap {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap; padding-top: .9rem; padding-bottom: .9rem;
+    }
+    .marca { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--blau-fosc); }
+    .marca svg { width: 34px; height: 34px; color: var(--blau); }
+    .marca span { font-family: "Lora", Georgia, serif; font-weight: 600; font-size: 1.4rem; }
+
+    /* ===== PORTADA ===== */
+    .hero { padding: 3.5rem 0 4rem; }
+    .hero .wrap { display: grid; gap: 2.5rem; grid-template-columns: 1.3fr 1fr; align-items: center; }
+    .hero h1 { font-size: clamp(2.5rem, 6.5vw, 4.25rem); letter-spacing: -0.01em; }
+    .hero p.lema { font-size: 1.3rem; max-width: 34ch; margin: 1.25rem 0 2rem; color: var(--text-suau); }
+    .botons { display: flex; gap: .9rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: .85rem 1.6rem; border-radius: 8px;
+      font-weight: 700; text-decoration: none; border: 2px solid var(--blau);
+      transition: background-color .2s ease, color .2s ease;
+    }
+    .btn.principal { background: var(--blau); color: var(--blanc); }
+    .btn.principal:hover { background: var(--blau-fosc); border-color: var(--blau-fosc); color: var(--blanc); }
+    .btn.secundari { background: transparent; color: var(--blau); }
+    .btn.secundari:hover { background: var(--cel); }
+
+    /* Targeta d'horari en directe: el detall destacat de la pàgina */
+    .ara { background: var(--blau-fosc); color: var(--blanc); border-radius: 16px; padding: 1.75rem; }
+    .ara h2 { color: var(--blanc); font-size: 1.25rem; font-weight: 500; margin-bottom: 1rem; }
+    .estat { display: flex; align-items: center; gap: .65rem; font-family: "Lora", Georgia, serif; font-size: 2rem; font-weight: 600; line-height: 1.1; }
+    .estat::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: #9DB8E0; flex: none; }
+    .estat.obert::before { background: #5BD08A; }
+    .estat.tancat::before { background: #FF8A7A; }
+    .ara p { margin: .6rem 0 0; color: #D7E3F4; }
+    .ara .nota { font-size: .95rem; margin-top: 1.25rem; }
+
+    /* ===== SECCIONS ===== */
+    section { padding: 4rem 0; }
+    section h2 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); margin-bottom: 1.75rem; }
+    .blau-clar { background: transparent; border-top: 1px solid var(--vora); border-bottom: 1px solid var(--vora); }
+
+    /* ===== ROBA ===== */
+    .roba { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .seccions { list-style: none; margin: 0; padding: 0; }
+    .seccions li {
+      font-family: "Lora", Georgia, serif; font-size: clamp(1.75rem, 4vw, 2.4rem);
+      color: var(--blau-fosc); padding: .9rem 0; border-top: 1px solid var(--vora);
+    }
+    .seccions li:last-child { border-bottom: 1px solid var(--vora); }
+    .roba p { margin: 0 0 1rem; max-width: 52ch; }
+
+    /* ===== HORARI ===== */
+    table.horari { width: 100%; max-width: 640px; border-collapse: collapse; background: var(--blanc); border-radius: 12px; overflow: hidden; }
+    .horari th, .horari td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--vora); }
+    .horari thead th { background: var(--blau); color: var(--blanc); font-weight: 700; }
+    .horari tbody th { font-weight: 700; }
+    .horari tr:last-child th, .horari tr:last-child td { border-bottom: 0; }
+    .horari tr.avui th, .horari tr.avui td { background: var(--cel); font-weight: 700; }
+    .horari td.tancat { color: var(--vermell); }
+    .taula-wrap { overflow-x: auto; }
+    .peu-horari { margin: 1rem 0 0; color: var(--text-suau); font-size: 1rem; }
+
+    /* ===== CONTACTE ===== */
+    .contacte { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 3rem; }
+    .contacte dt { font-weight: 700; color: var(--blau-fosc); margin-bottom: .15rem; }
+    .contacte dd { margin: 0 0 .25rem; }
+    .contacte .gran { font-family: "Lora", Georgia, serif; font-size: 1.6rem; }
+
+    /* ===== PEU ===== */
+    footer { background: var(--blau-fosc); color: #D7E3F4; padding: 2.5rem 0; font-size: 1rem; }
+    footer p { margin: 0 0 .5rem; max-width: 70ch; }
+    footer strong { color: var(--blanc); }
+
+    @media (max-width: 800px) {
+      .hero .wrap, .roba, .contacte { grid-template-columns: 1fr; }
+      .hero { padding: 2.5rem 0 3rem; }
+      section { padding: 3rem 0; }
+      .roba { gap: 2rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="marca">
+        <!-- Icona d'una casa -->
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 15 16 4l13 11"/>
+          <path d="M6 13v15h20V13"/>
+          <path d="M13 28v-8h6v8"/>
+        </svg>
+        <span>La Casa Blava</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="inici">
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Roba per a tota la família</h1>
+          <p class="lema">Una botiga de sempre a Olot, amb més de 63 anys d'història.</p>
+          <div class="botons">
+            <a class="btn principal" href="tel:+34972261751">Truca'ns al 972 26 17 51</a>
+            <a class="btn secundari" href="https://www.google.com/maps/search/?api=1&query=La+Casa+Blava+Carrer+Sant+Pere+Martir+7+Olot" target="_blank" rel="noopener">Com arribar</a>
+          </div>
+        </div>
+
+        <aside class="ara" aria-label="Estat de la botiga">
+          <h2>Ara mateix</h2>
+          <div class="estat" id="estat" role="status">Consulta l'horari</div>
+          <p id="estat-detall">Mira els horaris més avall.</p>
+          <p class="nota">Dimarts al matí tanquem. Si tens dubtes en festius, truca'ns.</p>
+        </aside>
+      </div>
+    </div>
+
+    <section id="roba" class="blau-clar">
+      <div class="wrap">
+        <h2>Què hi trobaràs</h2>
+        <div class="roba">
+          <ul class="seccions">
+            <li>Moda dona</li>
+            <li>Moda home</li>
+            <li>Moda infantil</li>
+          </ul>
+          <div>
+            <p>Treballem amb les millors marques per oferir-te productes de qualitat.</p>
+            <p>Roba interior, pijames, pantalons, bluses, camises, jerseis, jaquetes, polos, roba de la llar, roba esportiva especial de futbol i roba col·legial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="horari">
+      <div class="wrap">
+        <h2>Horari</h2>
+        <div class="taula-wrap">
+          <table class="horari">
+            <thead>
+              <tr><th scope="col">Dia</th><th scope="col">Matí</th><th scope="col">Tarda</th></tr>
+            </thead>
+            <tbody>
+              <tr data-dia="1"><th scope="row">Dilluns</th><td>9:30 – 13:00</td><td>16:30 – 20:15</td></tr>
+              <tr data-dia="2"><th scope="row">Dimarts</th><td class="tancat">Tancat</td><td>16:30 – 20:15</td></tr>
+              <tr data-dia="3"><th scope="row">Dimecres</th><td>9:30 – 13:00</td><td>16:30 – 20:15</td></tr>
+              <tr data-dia="4"><th scope="row">Dijous</th><td>9:30 – 13:00</td><td>16:30 – 20:15</td></tr>
+              <tr data-dia="5"><th scope="row">Divendres</th><td>9:30 – 13:00</td><td>16:30 – 20:15</td></tr>
+              <tr data-dia="6"><th scope="row">Dissabte</th><td>9:30 – 13:00</td><td>16:30 – 20:15</td></tr>
+              <tr data-dia="0"><th scope="row">Diumenge</th><td class="tancat">Tancat</td><td class="tancat">Tancat</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="peu-horari">Obert de dilluns a dissabte. Dimarts al matí tancat.</p>
+      </div>
+    </section>
+
+    <section id="contacte" class="blau-clar">
+      <div class="wrap">
+        <h2>Contacte</h2>
+        <dl class="contacte">
+          <div>
+            <dt>Adreça</dt>
+            <dd class="gran">C/ Sant Pere Màrtir, 7<br>17800 Olot</dd>
+          </div>
+          <div>
+            <dt>Telèfon</dt>
+            <dd class="gran"><a href="tel:+34972261751">972 26 17 51</a></dd>
+          </div>
+          <div>
+            <dt>Correu electrònic</dt>
+            <dd><a href="mailto:lacasablava2019@gmail.com">lacasablava2019@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt>Xarxes i botiga en línia</dt>
+            <dd><a href="https://www.instagram.com/lacasa.blava/" target="_blank" rel="noopener">Instagram: @lacasa.blava</a></dd>
+            <dd><a href="https://www.facebook.com/p/La-Casa-Blava-100035513876464/" target="_blank" rel="noopener">Facebook: La Casa Blava</a></dd>
+            <dd><a href="https://olot.shop/es/botiga/casablava/" target="_blank" rel="noopener">olot.shop: botiga en línia</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>Proposta de disseny no oficial.</strong> Pàgina de mostra feta com a exemple, no és la web oficial de La Casa Blava.</p>
+      <p>Horari i dades de contacte extrets de la fitxa de l'Associació de Comerciants d'Olot i de les pàgines públiques de la botiga.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Indica en directe si la botiga està oberta (hora d'Olot) i ressalta el dia d'avui.
+    (function () {
+      // Tram en minuts des de mitjanit: 9:30 = 570, 13:00 = 780, 16:30 = 990, 20:15 = 1215
+      var MATI = [570, 780], TARDA = [990, 1215];
+      var tramsPerDia = {
+        0: [],
+        1: [MATI, TARDA],
+        2: [TARDA],           // dimarts al matí tancat
+        3: [MATI, TARDA],
+        4: [MATI, TARDA],
+        5: [MATI, TARDA],
+        6: [MATI, TARDA]
+      };
+      var noms = ["diumenge", "dilluns", "dimarts", "dimecres", "dijous", "divendres", "dissabte"];
+      var diesAng = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+
+      function hora(min) {
+        var h = Math.floor(min / 60), m = min % 60;
+        return h + ":" + (m < 10 ? "0" : "") + m;
+      }
+
+      function ara() {
+        var parts = new Intl.DateTimeFormat("en-US", {
+          timeZone: "Europe/Madrid", weekday: "short", hour: "numeric", minute: "numeric", hourCycle: "h23"
+        }).formatToParts(new Date());
+        var dia = 0, h = 0, m = 0;
+        parts.forEach(function (p) {
+          if (p.type === "weekday") dia = diesAng[p.value];
+          if (p.type === "hour") h = parseInt(p.value, 10);
+          if (p.type === "minute") m = parseInt(p.value, 10);
+        });
+        return { dia: dia, min: h * 60 + m };
+      }
+
+      function actualitza() {
+        var t = ara();
+        var estat = document.getElementById("estat");
+        var detall = document.getElementById("estat-detall");
+        if (!estat || !detall) return;
+
+        // Ressalta la fila d'avui
+        document.querySelectorAll("table.horari tbody tr").forEach(function (tr) {
+          tr.classList.toggle("avui", parseInt(tr.getAttribute("data-dia"), 10) === t.dia);
+        });
+
+        // Està obert ara?
+        var trams = tramsPerDia[t.dia];
+        for (var i = 0; i < trams.length; i++) {
+          if (t.min >= trams[i][0] && t.min < trams[i][1]) {
+            estat.textContent = "Obert ara";
+            estat.className = "estat obert";
+            detall.textContent = "Tanquem a les " + hora(trams[i][1]) + ".";
+            return;
+          }
+        }
+
+        // Si està tancat, busca la propera obertura
+        estat.textContent = "Tancat ara";
+        estat.className = "estat tancat";
+        for (var d = 0; d <= 7; d++) {
+          var idx = (t.dia + d) % 7;
+          var llista = tramsPerDia[idx];
+          for (var j = 0; j < llista.length; j++) {
+            if (d > 0 || llista[j][0] > t.min) {
+              var quan = d === 0 ? "avui" : d === 1 ? "demà" : "el " + noms[idx];
+              detall.textContent = "Obrim " + quan + " a les " + hora(llista[j][0]) + ".";
+              return;
+            }
+          }
+        }
+      }
+
+      actualitza();
+      setInterval(actualitza, 60000);
+    })();
+  </script>
+</body>
+</html>
